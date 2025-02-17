@@ -6,6 +6,7 @@ import postcss from 'postcss'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: "/learning-management-system/"
 
   
 })
