@@ -20,7 +20,6 @@ const App = () => {
   const baseUrl = import.meta.env.VITE_BASE_URL || '';
 
   return (
-    // <BrowserRouter basename="/learning-management-system">
       <div className='text-default min-h-screen bg-white'>
         {!isEducatorRoute && <Navbar />}
         <Routes>
