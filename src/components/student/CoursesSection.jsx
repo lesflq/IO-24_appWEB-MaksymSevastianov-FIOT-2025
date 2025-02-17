@@ -6,6 +6,7 @@ import CourseCard from './CourseCard'
 const CoursesSection = () => {
 
   const {allCourses} = useContext(AppContext)
+  const baseUrl = import.meta.env.VITE_BASE_URL || '';
 
   return (
     <div className='py-16 md:px-40 px-8'>
@@ -19,7 +20,7 @@ const CoursesSection = () => {
         key={index} course={course}/>)}
       </div>
     
-      <Link to={'/course-list'} onClick={()=> scrollTo(0, 0)} 
+      <Link to={`${baseUrl}/course-list`} onClick={()=> scrollTo(0, 0)} 
       className='text-gray-500 border border-gray-500/30 px-10 py-3 rounded'>
         Show all coures</Link>
       

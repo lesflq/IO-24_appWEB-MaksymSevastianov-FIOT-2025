@@ -6,10 +6,11 @@ const SearchBar = ({data}) => {
 
   const navigate = useNavigate()
   const [input, setInput] = useState(data ? data : '')
+  const baseUrl = import.meta.env.VITE_BASE_URL || '';
 
   const onSearchHandler = (e)=>{
     e.preventDefault()
-    navigate('/course-list/' + input)
+    navigate(`${baseUrl}/course-list/${input}`);
   }
 
   return (
