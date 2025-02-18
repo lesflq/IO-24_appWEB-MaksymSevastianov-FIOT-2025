@@ -1,6 +1,8 @@
 import React from 'react'
 import { assets } from '../../assets/assets'
 
+const baseUrl = import.meta.env.VITE_BASE_URL || '';
+
 const Footer = () => {
   return (
     <footer className='bg-gray-900 md:px-36 text-left w-full mt-10'>
@@ -15,10 +17,10 @@ const Footer = () => {
         <div className='flex flex-col md:items-start items-center w-full'>
           <h2 className='font-semibold text-white mb-5'>Company</h2>
           <ul className='flex md:flex-col w-full justify-between text-sm text-white/80 md:space-y-2'>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href={`${baseUrl}/#`}>Home</a></li>
+            <li><a href={`${baseUrl}/#`}>About us</a></li>
+            <li><a href={`${baseUrl}/#`}>Contact us</a></li>
+            <li><a href={`${baseUrl}/#`}>Privacy policy</a></li>
           </ul>
         </div>
         <div className='hidden md:flex flex-col items-start w-full'>

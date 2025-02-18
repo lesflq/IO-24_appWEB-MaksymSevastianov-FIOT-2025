@@ -1,6 +1,8 @@
 import React from 'react'
 import { assets, dummyTestimonial } from '../../assets/assets'
 
+const baseUrl = import.meta.env.VITE_BASE_URL || '';
+
 const TestimonialsSection = () => {
   return (
     <div className='pb-14 px-8 md:px-0'>
@@ -35,7 +37,7 @@ const TestimonialsSection = () => {
                   {testimonial.feedback}
                 </p>
               </div>
-              <a href="#" className='text-blue-500 underline px-5'>Read more</a>
+              <a href={`${baseUrl}/#`} className='text-blue-500 underline px-5'>Read more</a>
           </div>
         ))}
       </div>

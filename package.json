@@ -2,7 +2,7 @@
   "name": "client",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://lesflq.github.io/learning-management-system",
+  "homepage": "https://lesflq.github.io/IO-24_appWEB-MaksymSevastianov-FIOT-2025",
   "type": "module",
   "scripts": {    
     "dev": "vite",
