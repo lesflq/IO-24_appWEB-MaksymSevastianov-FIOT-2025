@@ -9,4 +9,3 @@ export default defineConfig({
   base: "/IO-24_appWEB-MaksymSevastianov-FIOT-2025"
   
 })
-
