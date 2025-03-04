@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
 
-
 *{
   font-family: Outfit;
 }
@@ -26,6 +25,11 @@
     scroll-behavior: smooth;
   }
 }
+
+::-webkit-scrollbar{
+  display: none;
+}
+
 @layer utilities {
   .grid-cols-auto {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -48,11 +52,6 @@
 .h-section-height {
   height: var(--section-height);
 }
-
-::-webkit-scrollbar{
-  display: none;
-}
-
 
 
 
