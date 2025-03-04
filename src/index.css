@@ -53,7 +53,13 @@
   height: var(--section-height);
 }
 
-
+.simple-star-rating {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: start;
+  align-items: center;
+  gap: 4px;
+}
 
 .rich-text { font-size: 15px; color: #7A7B7D; }
 

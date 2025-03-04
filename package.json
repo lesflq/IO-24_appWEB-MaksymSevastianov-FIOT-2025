@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "homepage": "https://lesflq.github.io/IO-24_appWEB-MaksymSevastianov-FIOT-2025",
   "type": "module",
-  "scripts": {    
+  "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -22,7 +22,6 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.5",
-    "react-simple-star-rating": "^5.1.7",
     "react-youtube": "^10.1.0",
     "uniqid": "^5.4.0"
   },
